@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Coin Clicker</title>
+   
+    <style>
+         <link rel="stylesheet" href="main.css">
+     </style>
+</head>
+
+<body style="background-color:powderblue;">
+  <div class="sectionLeft">
+   <center>
+     <div class="coinContainer">
+          <span id="coins">0</span> coins<br>
+          <span id="coinspersecond">0</span> Coins Per Second<br>
+     </div>
+     <br>
+     <div class="clickerContainer">
+          <img src="https://www.iconpacks.net/icons/1/free-coin-icon-794-thumb.png"                     style="width:100px;height:100px" onclick="game.addToCoins(game.clickValue)">
+      </div>
+    </center>
+     <div class="sectionFooter">
+         <h5>Coin Clicker</h5>
+         <button onclick="resetGame();">Reset Game</button>
+   </div>
+   </div>
+   
+  <div class="sectionRight" id="shopContainer"></div>
+     <table class="shopButton" onclick="buyWorker()">
+         <tr>
+             <td id="image"><img                                                                          src="https://th.bing.com/th/id/OIP.owfLIKym_XgFTRnQdpmc2AHaHa?                            w=200&h=200&c=7&o=5&dpr=1.5&pid=1.7" style="width:50px;height:50px;">                  </td>
+             <td id="nameAndCost">
+                 <p>Worker</p>
+                 <p><span id="workercost">15</span> Coins</p>
+               </td>
+               <td id="amount"><span id="workers">0</span></td>
+            </tr>
+       </table>
+     <table class="shopButton" onclick="buyBoss()">
+         <tr>
+             <td id="image"><img                                        src="https://th.bing.com/th/id/R8583777b67546181a6114a8d28d292d3?rik=K%2bcdLCy9blmHaQ&riu=http%3a%2f%2fpainlesshire.com%2fwp-content%2fuploads%2f2015%2f04%2fangry-boss-business-cartoon-character-vector_fyIE4yOu-605x1024.png&ehk=NiTUfVQkJp5xmhtQ0tYQncN3Ks6gzkPzH6dpTcTdPaQ%3d&risl=&pid=ImgRaw" style="width:50px;height:50px;">                  </td>
+             <td id="nameAndCost">
+                 <p>Boss</p>
+                 <p><span id="bosscost">100</span> Coins</p>
+               </td>
+               <td id="amount"><span id="bosses">0</span></td>
+            </tr>
+       </table>
+      <table class="shopButton" onclick="buyMayor()">
+         <tr>
+             <td id="image"><img                                        src="https://th.bing.com/th/id/OIP.O_kZmnUuWMiFIwg20c5bpwHaIN?w=193&h=214&c=7&o=5&dpr=1.5&pid=1.7" style="width:50px;height:50px;">                  </td>
+             <td id="nameAndCost">
+                 <p>Mayor</p>
+                 <p><span id="mayorcost">800</span> Coins</p>
+               </td>
+               <td id="amount"><span id="mayors">0</span></td>
+            </tr>
+       </table>
+     </div>
+ 
+     <script src="main.js"></script>
+</body>
+</html>
