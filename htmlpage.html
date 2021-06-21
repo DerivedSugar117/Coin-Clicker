@@ -1,0 +1,41 @@
+﻿<head>
+    <title> coins - Coin CLicker</title>
+
+    <style>
+        @import url('/css/main.css');
+    </style>
+</head>
+
+<body style="background-color:powderblue;">
+    <div class="sectionLeft">
+        <center>
+            <div class="coinContainer">
+                <span id="coins">28110</span> Coins<br>
+                <span id="coinspersecond">5</span> Coins Per Second
+            </div>
+            <br>
+            <div class="clickerContainer">
+                <img src="https://www.iconpacks.net/icons/1/free-coin-icon-794-thumb.png" style="width:100px;height:100px" id="clicker">
+            </div>
+        </center>
+
+        <div class="sectionFooter">
+            <h5>Coin Clicker</h5>
+            <button onclick="resetGame();">Reset Game</button>
+        </div>
+    </div>
+
+    <div class="sectionRight">
+        <div id="upgradeContainer">
+            <img src="images/stoneminer.png" />
+        </div>
+    </div>
+    <div id="shopContainer"><table class="shopButton unselectable" onclick="building.purchase(0)"><tbody><tr><td id="image"><img src="Coin%20Clicker/images/miner.jpg"></td><td id="nameAndCost"><p>Miner</p><p><span>165</span> Coins</p></td><td id="amount"><span>5</span></td></tr></tbody></table><table class="shopButton unselectable" onclick="building.purchase(1)"><tbody><tr><td id="image"><img src="Coin%20Clicker/images/boss.png"></td><td id="nameAndCost"><p>Boss</p><p><span>1000</span> Coins</p></td><td id="amount"><span>0</span></td></tr></tbody></table><table class="shopButton unselectable" onclick="building.purchase(2)"><tbody><tr><td id="image"><img src="Coin%20Clicker/images/mayor.jpg"></td><td id="nameAndCost"><p>Mayor</p><p><span>10000</span> Coins</p></td><td id="amount"><span>0</span></td></tr></tbody></table></div>
+
+
+
+    <script 
+            src="js/main.js">
+    </script>
+
+</body>
